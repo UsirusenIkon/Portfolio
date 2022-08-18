@@ -1,17 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Crete+Round&family=Inter:wght@500;700&family=Open+Sans:ital@1&family=Poppins&family=Roboto:wght@500&family=Tiro+Devanagari+Marathi:ital@1&display=swap");
 
-/* ... custom Properties ...*/
+/* $-custom Properties-$ */
 :root {
   --primary-color: #6070ff;
   --secondary-color: #505f79;
-  --background-color: #ffffff;
+  --background-color: #fff;
   --last-btn-color: #396df2;
   --p-text-color: #344563;
   --BED-color: #7a869a;
   --l-connect: #7f8cff;
 }
 
-/* ... Css Resets ...*/
+/* $-Css Resets-$ */
 * {
   margin: 0;
   padding: 0;
@@ -44,12 +44,12 @@ a {
   text-decoration: none;
 }
 
-/* ... Utility classes  ...*/
+/* $-Utility classes-$ */
 .flex {
   display: flex;
 }
 
-/* ... header section ... */
+/* $-header section-$ */
 .header-headline {
   background-color: var(--background-color);
   border-bottom-left-radius: 100px;
@@ -82,11 +82,12 @@ a {
   border-radius: 5rem;
 }
 
+/* stylelint-disable-next-line selector-type-no-unknown */
 .line:not(last-child) {
   margin-bottom: 4px;
 }
 
-/* Headline section */
+/* $-Headline section-$ */
 .headline-container {
   width: 100%;
   height: 100vh;
