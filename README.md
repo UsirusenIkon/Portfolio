@@ -14,7 +14,7 @@
     - Use images and backgrounds to enhance the look of the website.
     - Create forms with HTML5 validations.
     - Understand the importance of UX.
-    - Understand how to create UIs adaptable to different screen sizes using media queries.
+    - Understand how to create UI's adaptable to different screen sizes using media queries.
 
 ## Built With
    - HTML & CSS (CSS Flex Box)
