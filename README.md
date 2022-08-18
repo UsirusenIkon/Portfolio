@@ -2,15 +2,12 @@
    For the first milestone in the process of creating your portfolio website, you will:
     - Set up a new repository and prepare it for development using best practices (e.g. linters).
     - Build the first 2 sections of the mobile website using the template you chose in the previous step.
-
-    ![Mobile Version](asset/Header%20%26%20Headline%20Section%20(mobile%20version).png)
-    ![Desktop Version](asset/Header%20%26%20Headline%20Section%20(destop%20responsive).png)
-    
+     
     The objectives of this project is to:
     
     - Understand how to parse a Figma design to create a UI.
     - Flexbox to place elements in the page.
-    - Build a personal portfolio site.
+    - Build a personal portfolio site header & headline Section.
     - Use images and backgrounds to enhance the look of the website.
     - Create forms with HTML5 validations.
     - Understand the importance of UX.
