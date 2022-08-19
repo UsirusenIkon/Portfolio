@@ -161,7 +161,7 @@ h3 {
 
 .work-section-cards {
   background-color: var(--background-color);
-  padding: 1rem;
+  padding: 0 1rem;
   width: 100%;
   margin-bottom: 88px;
   border-radius: 20px;
