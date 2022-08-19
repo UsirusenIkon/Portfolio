@@ -14,7 +14,7 @@
     - Understand how to create UI's adaptable to different screen sizes using media queries.
 
 ## Built With
-   - HTML & CSS (CSS Flex Box)
+   - HTML & CSS (CSS Flex Box & Grid)
    - VS code
    
 ## Getting Started
