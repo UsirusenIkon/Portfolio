@@ -266,6 +266,15 @@ h3 {
   margin-right: 1rem;
 }
 
+.fw-skill {
+  flex-direction: column;
+}
+
+.fw-skill .line {
+  width: 100%;
+  background-color: #dfe1e6;
+}
+
 /* Contact-me */
 .contact-me {
   background-color: var(--background-color);
