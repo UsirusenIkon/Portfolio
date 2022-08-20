@@ -16,6 +16,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  border: none;
 }
 
 .margin-top {
@@ -40,6 +41,11 @@ img {
   height: 1.71rem;
 }
 
+.img {
+  width: 295px;
+  height: 220px;
+}
+
 a {
   text-decoration: none;
 }
@@ -47,6 +53,28 @@ a {
 /* $-Utility classes-$ */
 .flex {
   display: flex;
+}
+
+.grid {
+  display: grid;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 3rem;
+  line-height: 3.5rem;
+  color: #172b4d;
+}
+
+h2 {
+  font-weight: 900;
+  font-size: 2.5rem;
+  line-height: 3.5rem;
+  color: #172b4d;
+}
+
+h3 {
+  color: var(--l-connect);
 }
 
 /* $-header section-$ */
@@ -94,9 +122,9 @@ a {
   align-items: center;
   position: relative;
   background-image: url(asset/header-shapes\ mobile.png);
-  background-size: cover;
   background-repeat: no-repeat;
-  background-position: 2% -20%;
+  background-size: cover;
+  background-position: 1% -10%;
 }
 
 .headline {
@@ -110,25 +138,9 @@ a {
   max-width: 360px;
 }
 
-h1 {
-  font-weight: 700;
-  font-size: 3rem;
-  line-height: 3.5rem;
-  color: #172b4d;
-}
-
-p {
-  height: 146px;
-}
-
-h3 {
-  color: var(--l-connect);
-}
-
 .connect {
   flex-direction: column;
   width: 200px;
-  margin-bottom: 136px;
 }
 
 .icons {
@@ -136,4 +148,186 @@ h3 {
   color: var(--secondary-color);
   justify-content: space-between;
   align-items: flex-end;
+  margin-top: 14px;
+  margin-bottom: 16px;
+}
+
+/* $-Work-section-$ */
+.work-section {
+  margin: 114px 0 26px 0;
+  padding: 0 2em;
+  grid-template-columns: 1fr;
+}
+
+.work-section-cards {
+  background-color: var(--background-color);
+  padding: 0 1rem;
+  width: 100%;
+  margin-bottom: 88px;
+  border-radius: 20px;
+  flex-direction: column;
+}
+
+.cards-image {
+  margin-top: 1rem;
+  justify-content: center;
+}
+
+.topic {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--p-text-color);
+  margin: 12px 0;
+}
+
+.summary {
+  margin-bottom: 16px;
+}
+
+.grey {
+  font-size: 10px;
+  color: var(--BED-color);
+  width: 1rem;
+  letter-spacing: 2px;
+  font-weight: 600;
+  margin: 0 4px;
+}
+
+.btn-grp {
+  margin-bottom: 25px;
+}
+
+/* stylelint-disable-next-line selector-type-no-unknown */
+.btn-grp :not(first-child) {
+  margin-right: 8px;
+}
+
+.btn-grp button {
+  border-radius: 10px;
+  border: none;
+  padding: 0.5em 0.9em;
+  background-color: #ebebff;
+  color: var(--primary-color);
+}
+
+.last-btn {
+  border-radius: 5px;
+  border: 1px solid var(--last-btn-color);
+  padding: 1em 1em;
+  background-color: var(--background-color);
+  color: var(--last-btn-color);
+  font-weight: 700;
+  font-size: 0.8rem;
+  margin-bottom: 17px;
+}
+
+.last-btn:active {
+  background-color: #2230d2;
+  color: var(--background-color);
+  border: 1px solid var(--background-color);
+}
+
+.last-btn:hover {
+  background-color: var(--primary-color);
+  color: var(--background-color);
+  border: 1px solid var(--background-color);
+}
+
+/* $-About-me-$ */
+.About-me {
+  background-color: var(--background-color);
+  border-top-right-radius: 100px;
+  padding: 7em 1.5em;
+}
+
+.about-me-header h2 {
+  margin-top: 1rem;
+  width: 5ch;
+  font-weight: 700;
+  font-size: 3.3rem;
+}
+
+.language-text {
+  justify-content: space-between;
+  padding-right: 3em;
+  margin: 2rem 0;
+}
+
+.code-languages li {
+  align-items: center;
+  background-color: #f7f7f9;
+  margin: 1rem 0;
+  padding: 1rem;
+  height: 5rem;
+  font-weight: 700;
+}
+
+.code-languages img {
+  height: 3.7rem;
+  margin-right: 1rem;
+}
+
+.fw-skill {
+  flex-direction: column;
+}
+
+.fw-skill .line {
+  width: 100%;
+  background-color: #dfe1e6;
+}
+
+/* Contact-me */
+.contact-me {
+  background-color: var(--background-color);
+}
+
+.blue {
+  background-color: var(--primary-color);
+  border-top-left-radius: 100px;
+  text-align: center;
+  padding: 8em 3em 1em 3em;
+  background-image: url(asset/contact\ form\ shapes-mobile.png);
+  background-repeat: no-repeat;
+  background-position-x: 100%;
+  padding-bottom: 3rem;
+}
+
+.blue h2 {
+  color: var(--background-color);
+  font-weight: 700;
+  font-size: 3rem;
+  letter-spacing: 1px;
+}
+
+.blue p {
+  line-height: 1.4rem;
+  color: var(--background-color);
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+}
+
+.form {
+  flex-direction: column;
+}
+
+.form button {
+  max-width: 110px;
+}
+
+.input {
+  flex-direction: column;
+}
+
+input {
+  height: 4em;
+  border-radius: 10px;
+  padding: 0 1em;
+  margin-bottom: 1.3rem;
+}
+
+textarea {
+  height: 13em;
+  border-radius: 10px;
+  padding: 1em;
+  margin-bottom: 1rem;
 }

@@ -10,11 +10,11 @@
     - Build a personal portfolio site header & headline Section.
     - Use images and backgrounds to enhance the look of the website.
     - Create forms with HTML5 validations.
-    - Understand the importance of UX.
+    - Understand the importance of UI & UX.
     - Understand how to create UI's adaptable to different screen sizes using media queries.
 
 ## Built With
-   - HTML & CSS (CSS Flex Box)
+   - HTML & CSS (CSS Flex Box & Grid)
    - VS code
    
 ## Getting Started
