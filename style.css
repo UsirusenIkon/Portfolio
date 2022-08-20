@@ -154,7 +154,7 @@ h3 {
 
 /* $-Work-section-$ */
 .work-section {
-  margin: 114px 0;
+  margin: 114px 0 26px 0;
   padding: 0 2em;
   grid-template-columns: 1fr;
 }
