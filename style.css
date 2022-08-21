@@ -61,7 +61,7 @@ a {
 
 h1 {
   font-weight: 700;
-  font-size: 3.7rem;
+  font-size: 3rem;
   line-height: 3.5rem;
   color: #172b4d;
 }
@@ -81,6 +81,8 @@ h3 {
 .header-headline {
   background-color: var(--background-color);
   border-bottom-left-radius: 100px;
+  position: relative;
+  overflow: hidden;
 }
 
 .header {
@@ -119,19 +121,17 @@ h3 {
 .headline-container {
   width: 100%;
   height: 100vh;
-  position: relative;
-  background-image: url(asset/header-shapes\ mobile.png);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: 1% -10%;
   justify-content: center;
 }
 
 .headline {
-  position: absolute;
-  top: 20%;
+  position: relative;
+  top: 30%;
   flex-direction: column;
   margin: 0 1.7rem;
+  z-index: 20;
 }
 
 .headline-info {
@@ -150,6 +150,141 @@ h3 {
   justify-content: space-between;
   margin-top: 14px;
   margin-bottom: 16px;
+}
+
+/* $-background-illustration-$ */
+.ellipse1 {
+  background-image: url(asset/background-illustration/Ellipse1.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 30%;
+  height: 30%;
+  position: absolute;
+  right: -14%;
+  top: 15%;
+  z-index: 100;
+}
+
+.rectangle1 {
+  background-image: url(asset/background-illustration/Rectangle1.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 25%;
+  height: 20%;
+  position: absolute;
+  right: -5%;
+  top: 9.9%;
+}
+
+.ellipse2 {
+  background-image: url(asset/background-illustration/Ellipse4.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 5%;
+  height: 5%;
+  position: absolute;
+  right: 40%;
+  top: 10%;
+}
+
+.rectangle2 {
+  background-image: url(asset/background-illustration/Rectangle4.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 5%;
+  height: 5%;
+  position: absolute;
+  left: 35%;
+  top: 20.2%;
+}
+
+.ellipse3 {
+  background-image: url(asset/background-illustration/Ellipse3.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 2%;
+  height: 2%;
+  position: absolute;
+  left: 35.1%;
+  top: 21.2%;
+}
+
+.ellipse4 {
+  background-image: url(asset/background-illustration/Ellipse5.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 8%;
+  height: 8%;
+  position: absolute;
+  left: -3%;
+  top: 15%;
+}
+
+.rectangle3 {
+  background-image: url(asset/background-illustration/Rectangle3.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 10%;
+  height: 9%;
+  position: absolute;
+  left: -8%;
+  top: 11%;
+}
+
+.ellipse5 {
+  background-image: url(asset/background-illustration/Ellipse4.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 3%;
+  height: 3%;
+  position: absolute;
+  left: 15%;
+  bottom: 8%;
+}
+
+.ellipse6 {
+  background-image: url(asset/background-illustration/Ellipse6.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 6%;
+  height: 6%;
+  position: absolute;
+  right: 15%;
+  bottom: 20.6%;
+}
+
+.ellipse7 {
+  background-image: url(asset/background-illustration/Ellipse7.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 6%;
+  height: 6%;
+  position: absolute;
+  right: 17%;
+  bottom: 19.2%;
+}
+
+.ellipse8 {
+  background-image: url(asset/background-illustration/Ellipse2.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 5%;
+  height: 5%;
+  position: absolute;
+  right: 32%;
+  bottom: 5%;
+  z-index: 1;
+}
+
+.rectangle4 {
+  background-image: url(asset/background-illustration/Rectangle2.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 17%;
+  height: 10%;
+  position: absolute;
+  right: 30%;
+  bottom: 0.1%;
 }
 
 /* $-Work-section-$ */
@@ -286,7 +421,8 @@ h3 {
   border-top-left-radius: 100px;
   text-align: center;
   padding: 8em 3em 1em 3em;
-  background-image: url(asset/contact\ form\ shapes-mobile.png);
+  background-image: url(asset/mobile@2x.png);
+  background-size: contain;
   background-repeat: no-repeat;
   background-position-x: 100%;
   padding-bottom: 3rem;
