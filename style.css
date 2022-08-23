@@ -453,12 +453,14 @@ h3 {
   background-color: var(--primary-color);
   border-top-left-radius: 100px;
   text-align: center;
-  padding: 8em 3em 1em 3em;
+  padding: 8em 1em 1em 1em;
   background-image: url(asset/mobile@2x.png);
   background-size: contain;
   background-repeat: no-repeat;
   background-position-x: 100%;
   padding-bottom: 3rem;
+  flex-direction: column;
+  width: 100%;
 }
 
 .blue h2 {
@@ -494,9 +496,30 @@ input {
   margin-bottom: 1.3rem;
 }
 
+input:invalid {
+  outline: none;
+}
+
 textarea {
   height: 13em;
   border-radius: 10px;
   padding: 1em;
   margin-bottom: 1rem;
+}
+
+textarea:focus {
+  outline: none;
+  border: 3px solid green;
+}
+
+form input:valid,
+form textarea:valid {
+  outline: none;
+  border-bottom: 1px solid rgba(5, 197, 5, 0.596);
+}
+
+form textarea::placeholder {
+  font-size: 1rem;
+  color: #979493;
+  font-family: inherit;
 }
