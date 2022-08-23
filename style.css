@@ -467,3 +467,20 @@ textarea {
   padding: 1em;
   margin-bottom: 1rem;
 }
+
+textarea:focus {
+  outline: none;
+  border: 3px solid green;
+}
+
+form input:valid,
+form textarea:valid {
+  outline: none;
+  border-bottom: 1px solid rgba(5, 197, 5, 0.596);
+}
+
+form textarea::placeholder {
+  font-size: 1rem;
+  color: #979493;
+  font-family: inherit;
+}
