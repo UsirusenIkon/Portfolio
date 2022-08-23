@@ -42,8 +42,9 @@ img {
 }
 
 .img {
-  width: 295px;
-  height: 220px;
+  width: 100%;
+  height: auto;
+  max-width: 30rem;
 }
 
 a {
@@ -292,20 +293,33 @@ h3 {
   margin: 114px 0 26px 0;
   padding: 0 2em;
   grid-template-columns: 1fr;
+  flex-direction: column;
+  align-items: center;
 }
 
 .work-section-cards {
   background-color: var(--background-color);
-  padding: 0 1rem;
-  width: 100%;
+  width: fit-content;
   margin-bottom: 88px;
+  padding: 1rem;
   border-radius: 20px;
-  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.flip {
+  flex-direction: row-reverse;
 }
 
 .cards-image {
-  margin-top: 1rem;
+  margin: 1rem;
   justify-content: center;
+}
+
+.work-section-content {
+  width: 100%;
+  max-width: 25rem;
+  margin: 1rem;
 }
 
 .topic {
@@ -373,13 +387,32 @@ h3 {
   background-color: var(--background-color);
   border-top-right-radius: 100px;
   padding: 7em 1.5em;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
-.about-me-header h2 {
+.about-me-content {
+  width: 100%;
+  max-width: 26rem;
+  border: 1px solid;
+}
+
+.about-me-info {
+  width: 100%;
+  max-width: 24rem;
+}
+
+.about-me-content h2 {
   margin-top: 1rem;
   width: 5ch;
   font-weight: 700;
   font-size: 3.3rem;
+}
+
+.languages {
+  border: 1px solid;
+  width: 100%;
+  max-width: 36rem;
 }
 
 .language-text {
