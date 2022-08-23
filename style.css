@@ -420,12 +420,13 @@ h3 {
   background-color: var(--primary-color);
   border-top-left-radius: 100px;
   text-align: center;
-  padding: 8em 3em 1em 3em;
+  padding: 8em 1em 1em 1em;
   background-image: url(asset/mobile@2x.png);
   background-size: contain;
   background-repeat: no-repeat;
   background-position-x: 100%;
   padding-bottom: 3rem;
+  flex-direction: column;
 }
 
 .blue h2 {
