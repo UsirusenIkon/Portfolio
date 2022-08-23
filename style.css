@@ -486,3 +486,7 @@ textarea {
   padding: 1em;
   margin-bottom: 1rem;
 }
+
+.float li {
+  float: left;
+}
