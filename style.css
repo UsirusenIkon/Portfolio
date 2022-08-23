@@ -461,6 +461,10 @@ input {
   margin-bottom: 1.3rem;
 }
 
+input:invalid {
+  outline: none;
+}
+
 textarea {
   height: 13em;
   border-radius: 10px;
