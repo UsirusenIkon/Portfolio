@@ -1,17 +1,14 @@
 ## Portfolio   
-   For the first milestone in the process of creating your portfolio website, you will:
-    - Set up a new repository and prepare it for development using best practices (e.g. linters).
-    - Build the first 2 sections of the mobile website using the template you chose in the previous step.
+   For the third milestone of your portfolio website, you will:
+
+   Add a contact form to your portfolio and the portfolio of your coding partner.
+   Make sure that you guide your users' experience in a way that helps them fill in the form without frustration.
      
     The objectives of this project is to:
     
-    - Understand how to parse a Figma design to create a UI.
-    - Flexbox to place elements in the page.
-    - Build a personal portfolio site header & headline Section.
-    - Use images and backgrounds to enhance the look of the website.
-    - Create forms with HTML5 validations.
-    - Understand the importance of UI & UX.
-    - Understand how to create UI's adaptable to different screen sizes using media queries.
+   Create forms with HTML5 validations.
+   Understand the importance of UX.
+   Understand how to parse a Figma design to create a UI.
 
 ## Built With
    - HTML & CSS (CSS Flex Box & Grid)
