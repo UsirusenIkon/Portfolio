@@ -47,4 +47,5 @@
    - etc
 
 ## 📝 License
-    - This project is [MIT](https://github.com/UsirusenIkon/Hello-World/blob/feature/LICENSE) licensed.
+    - This project is [MIT](https://github.com/UsirusenIkon/
+Portfolio/blob/feature/LICENSE) licensed.
