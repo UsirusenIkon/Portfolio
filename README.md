@@ -1,17 +1,18 @@
+![](https://img.shields.io/badge/Microverse-blueviolet)
+
 ## Portfolio   
-   For the first milestone in the process of creating your portfolio website, you will:
-    - Set up a new repository and prepare it for development using best practices (e.g. linters).
-    - Build the first 2 sections of the mobile website using the template you chose in the previous step.
+   For the fourth project in your portfolio website, you will:
+
+   -Use media queries to make sure that your website displays correctly on desktop screens.
+
+   ![screenshot](asset/mobile-screenshot.png) ![screenshot](asset/desktop-screenshot.png)
+
+   ![screenshot](asset/desktop-GIF.gif)
      
     The objectives of this project is to:
     
-    - Understand how to parse a Figma design to create a UI.
-    - Flexbox to place elements in the page.
-    - Build a personal portfolio site header & headline Section.
-    - Use images and backgrounds to enhance the look of the website.
-    - Create forms with HTML5 validations.
-    - Understand the importance of UI & UX.
-    - Understand how to create UI's adaptable to different screen sizes using media queries.
+   -Understand how to create UIs adaptable to different screen sizes using media queries.
+   -Understand how to parse a Figma design to create a UI.
 
 ## Built With
    - HTML & CSS (CSS Flex Box & Grid)
@@ -24,6 +25,7 @@
    - please install git in your computer.
    - Also install a code editor.
    - A web browser to view the output.
+   - You need to make sure that your dekstop version looks like the one in the Figma design template that you chose. 
    
 ## Setup
    - To clone my repository run this command `git clone https://github.com/UsirusenIkon/Portfolio.git`  
@@ -47,4 +49,4 @@
    - etc
 
 ## 📝 License
-    - This project is [MIT](https://github.com/UsirusenIkon/Hello-World/blob/feature/LICENSE) licensed.
+    - This project is [MIT](https://github.com/UsirusenIkon/Portfolio/blob/feature/LICENSE) licensed.
