@@ -132,28 +132,63 @@ header {
   font-size: 23px;
   line-height: 20px;
   color: var(--primary-color);
-  animation: movedown 300ms ease-in;
+  animation: move-right 2s ease-in;
 }
 
-@keyframes movedown {
+.logo:hover {
+  /* animation: movedown 300ms ease-in; */
+  animation-delay: 2s;
+  transform: rotateY(360deg);
+  transition: all 2s ease;
+}
+
+@keyframes move-right {
   0% {
     opacity: 0;
-    transform: translateY(70px);
+    transform: translateX(-100px);
   }
 
   50% {
-    opacity: 1;
-    transform: translateY(-30px);
+    transform: translateX(20px);
   }
 
   100% {
-    opacity: 2;
-    transform: translateY(0);
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes move-left {
+  0% {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+
+  50% {
+    opacity: 0.5;
+    transform: translateX(-20px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes appear {
+  0% {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+
+  100% {
+    opacity: 1;
   }
 }
 
 .navbar {
   flex-direction: row-reverse;
+  animation: move-left 2s ease-in;
 }
 
 .nav-menu {
@@ -201,7 +236,7 @@ header {
 .headline-container {
   justify-content: center;
   width: 100%;
-  height: 100vh;
+  height: 47rem;
 }
 
 .headline {
@@ -212,10 +247,11 @@ header {
 }
 
 .headline-info {
-  margin: 0 1.7rem;
-  margin-top: 5rem;
-  width: 90%;
+  padding: 0 0 0 1.2rem;
+  margin-top: 3.5rem;
+  width: 96%;
   max-width: 600px;
+  animation: appear 1s ease-in-out;
 }
 
 .connect {
@@ -235,7 +271,6 @@ header {
   width: -webkit-fill-available;
   position: absolute;
   content: url(asset/header-shapes-mobile.png);
-  height: 90vh;
   top: 10%;
 }
 
@@ -245,8 +280,11 @@ header {
     content: url(asset/Header-laptop.png);
     position: absolute;
     width: 93%;
-    height: 90vh;
     top: 10%;
+  }
+
+  .headline-info {
+    margin-top: 6rem;
   }
 }
 
@@ -277,7 +315,8 @@ header {
 
 .work-section-cards:hover {
   border: 1px solid #a7aeff;
-  filter: drop-shadow(1px 1px 1px);
+  filter: drop-shadow(2px 2px 4px);
+  transition: all 700ms ease-in;
 }
 
 .flip {
@@ -361,6 +400,7 @@ header {
   background-color: var(--primary-color);
   color: var(--background-color);
   border: 1px solid var(--background-color);
+  transition: all 400ms ease-in;
 }
 
 @media screen and (min-width: 768px) {
@@ -611,7 +651,6 @@ header {
 /* Contact-me */
 .contact-me {
   background-color: var(--background-color);
-  height: 100vh;
   width: 100%;
   padding-top: 4rem;
 }
@@ -712,8 +751,9 @@ form textarea::placeholder {
     content: url(asset/contact-form-background.png);
     position: absolute;
     width: 86%;
-    height: 34rem;
+    height: 35rem;
     left: 7%;
+    padding: 2rem 1rem;
   }
 
   .form .last-btn {
