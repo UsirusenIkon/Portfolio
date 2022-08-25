@@ -132,6 +132,24 @@ header {
   font-size: 23px;
   line-height: 20px;
   color: var(--primary-color);
+  animation: movedown 300ms ease-in;
+}
+
+@keyframes movedown {
+  0% {
+    opacity: 0;
+    transform: translateY(70px);
+  }
+
+  50% {
+    opacity: 1;
+    transform: translateY(-30px);
+  }
+
+  100% {
+    opacity: 2;
+    transform: translateY(0);
+  }
 }
 
 .navbar {
