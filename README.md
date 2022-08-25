@@ -1,16 +1,19 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
 ## Portfolio   
-   For the third milestone of your portfolio website, you will:
 
-   Add a contact form to your portfolio and the portfolio of your coding partner.
-   Make sure that you guide your users' experience in a way that helps them fill in the form without frustration.
+   In this project we are creating a Portfolio site design that is responsive for mobile and desktop
+
+   ![screenshot](asset/mobile-screenshot.png) ![screenshot](asset/desktop-screenshot.png)
+
+   ![screenshot](asset/desktop-GIF.gif)
      
-    The objectives of this project is to:
+   The objectives of this project is to:
     
-   Create forms with HTML5 validations.
-   Understand the importance of UX.
-   Understand how to parse a Figma design to create a UI.
+   -Understand how to parse a Figma design to create a UI.
+   -Flexbox to place elements in the page.
+   -Build a personal portfolio site.
+   -Use images and backgrounds to enhance the look of the website.
 
 ## Built With
    - HTML & CSS (CSS Flex Box & Grid)
@@ -23,6 +26,7 @@
    - please install git in your computer.
    - Also install a code editor.
    - A web browser to view the output.
+   - You need to make sure that your dekstop version looks like the one in the Figma design template that you chose. 
    
 ## Setup
    - To clone my repository run this command `git clone https://github.com/UsirusenIkon/Portfolio.git`  

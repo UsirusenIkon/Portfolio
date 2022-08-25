@@ -1,36 +1,208 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Portfolio</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet" />
-  <link rel="stylesheet" href="style.css" />
-  <title>Portfolio</title>
-</head>
-
-<body>
-  <section class="header-headline">
-    <!-- header-section -->
-    <header class="header flex">
-      <a href="#home" class="logo">Ikon</a>
-      <nav class="hamburger-menu flex">
-        <span class="line"></span>
-        <span class="line"></span>
-        <span class="line"></span>
-      </nav>
-    </header>
-    <!-- Headline section -->
-    <div class="headline-container flex">
-      <div class="headline flex">
-        <div class="headline-info">
-          <h1>I’m Usirusen<br>Glad to see you!</h1>
+  <body>
+    <section class="header-headline" id="home">
+      <!-- header-section -->
+      <header class="header flex">
+        <div class="header-content flex">
+          <a href="#home" class="logo">Ikon</a>
+          <nav class="navbar flex">
+            <button class="hamburger-menu flex">
+              <span class="line"></span>
+              <span class="line"></span>
+              <span class="line"></span>
+            </button>
+            <ul class="nav-menu flex">
+              <li class="item flex"><a href="#work">Portfolio</a></li>
+              <li class="item flex"><a href="#about">about</a></li>
+              <li class="item flex"><a href="#contact">contact</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <!-- Headline section -->
+      <div class="headline-container flex">
+        <div class="headline flex">
+          <div class="headline-info">
+            <h1>I’m Usirusen<br />Glad to see you!</h1>
+            <p class="margin-top">
+              I’m a software developer! I can help you build a product , feature
+              or website Look through some of my work and experience! If you
+              like what you see and have a project you need coded, don’t
+              hestiate to contact me.
+            </p>
+            <div class="connect flex">
+              <h3 class="margin-top">LET’S CONNECT</h3>
+              <ul class="icons flex">
+                <li>
+                  <a href="#"><i class="bx bxl-twitter"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="bx bxl-linkedin"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="bx bxl-medium"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="bx bxl-github"></i></a>
+                </li>
+                <li>
+                  <a href="#"><img src="asset/Vector.png" alt="peace" /></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="illustration"></div>
+      </div>
+    </section>
+    <!-- Work-section -->
+    <section class="work-section flex" id="work">
+      <div class="work-section-cards flex">
+        <div class="cards-image flex">
+          <img src="asset/SnapshootPortfolio.jpg" class="img desk" alt="tonic"/>
+        </div>
+        <div class="work-section-content">
+          <h3>Tonic</h3>
+          <p class="topic">
+            CANOPY
+            <span class="grey"
+              ><i class="bx bxs-circle grey"></i>back End Dev<i
+                class="bx bxs-circle grey"
+              ></i
+              >2015</span
+            >
+          </p>
+          <p class="summary">
+            A daily selection of privately personalized reads; no accounts or
+            sign-ups required.
+          </p>
+          <ul class="btn-grp flex">
+            <li><button type="submit">html</button></li>
+            <li><button type="submit">css</button></li>
+            <li><button type="submit">javaScript</button></li>
+          </ul>
+          <button class="last-btn" type="submit">See Project</button>
+        </div>
+      </div>
+      <div class="work-section-cards flip flex">
+        <div class="cards-image flex">
+          <img
+            src="asset/SnapshootPortfolio1.png"
+            class="img desk1"
+            alt="availability"
+          />
+        </div>
+        <div class="work-section-content">
+          <h3>Multi-Post Stories</h3>
+          <p class="topic">
+            <span class="desk-span10">CANOPY</span>
+            <span class="grey"
+              ><i class="bx bxs-circle grey"></i><span class="desk-span11">back End Dev</span>
+              <i class="bx bxs-circle grey"></i>2015</span
+            >
+          </p>
+          <p class="summary desk-summary">
+            A daily selection of privately personalized reads; no accounts or
+            sign-ups required.
+          </p>
+          <div class="buttons flex">
+            <ul class="btn-grp flex">
+              <li><button type="submit">html</button></li>
+              <li class="ruby"><button type="submit">Ruby on rails</button></li>
+              <li><button type="submit">css</button></li>
+              <li><button type="submit">javaScript</button></li>
+            </ul>
+            <div>
+              <button class="last-btn" type="submit">See Project</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="work-section-cards flex">
+        <div class="cards-image flex">
+          <img src="asset//SnapshootPortfolio2.png" class="img desk2" alt="tonic" />
+        </div>
+        <div class="work-section-content">
+          <h3 class="fb">Tonic</h3>
+          <p class="topic">
+            <span class="desk-span10">CANOPY</span>
+            <span class="grey"><i class="bx bxs-circle grey"></i><span class="desk-span11">back End Dev</span><i class="bx bxs-circle grey"></i>2015</span>
+          </p>
+          <p class="summary desk-summary3">
+            A daily selection of privately personalized reads; no accounts or
+            sign-ups required.
+          </p>
+          <div class="buttons flex">
+            <ul class="btn-grp flex">
+              <li><button type="submit">html</button></li>
+              <li class="ruby"><button type="submit">Ruby on rails</button></li>
+              <li><button type="submit">css</button></li>
+              <li><button type="submit">javaScript</button></li>
+            </ul>
+            <div>
+              <button class="last-btn" type="submit">See Project</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="work-section-cards flip flex">
+        <div class="cards-image flex">
+          <img
+            src="asset/SnapshootPortfolio3.png"
+            class="img desk3"
+            alt="art printing"
+          />
+        </div>
+        <div class="work-section-content">
+          <h3 class="ub-nav">Multi-Post Stories</h3>
+          <p class="topic uber">
+            <span class="desk-span20">CANOPY</span>
+            <span class="grey"
+              ><i class="bx bxs-circle grey dot"></i><span class="desk-span21">back End Dev</span>
+              <i class="bx bxs-circle grey dot"></i><span class="desk-span22">2015</span></span
+            >
+          </p>
+          <p class="summary desk-summary4">
+            A daily selection of privately personalized reads; no accounts or
+            sign-ups required.
+          </p>
+          <div class="buttons flex">
+            <ul class="btn-grp flex">
+              <li><button type="submit">html</button></li>
+              <li class="ruby"><button type="submit">Ruby on rails</button></li>
+              <li><button type="submit">css</button></li>
+              <li><button type="submit">javaScript</button></li>
+            </ul>
+            <div>
+              <button class="last-btn" type="submit">See Project</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- About-me -->
+    <section class="About-me flex" id="about">
+      <div class="about-me-content">
+        <div class="about-me-info">
+          <h2>About Myself</h2>
           <p class="margin-top">
-            I’m a software developer! I can help you build a product , feature
-            or website Look through some of my work and experience! If you
-            like what you see and have a project you need coded, don’t
-            hestiate to contact me.
+            Hello I’m a software developer! I can help you build a product ,
+            feature or website Look through some of my work and experience! If you
+            like what you see and have a project you need coded, don’t hestiate to
+            contact me.
           </p>
         </div>
         <div class="connect flex">
@@ -53,176 +225,56 @@
             </li>
           </ul>
         </div>
+        <button class="last-btn" type="submit">Get my resume</button>
       </div>
-    </div>
-    <div class="ellipse1"></div>
-    <div class="ellipse2"></div>
-    <div class="ellipse3"></div>
-    <div class="ellipse4"></div>
-    <div class="ellipse5"></div>
-    <div class="ellipse6"></div>
-    <div class="ellipse7"></div>
-    <div class="ellipse8"></div>
-    <div class="rectangle1"></div>
-    <div class="rectangle2"></div>
-    <div class="rectangle3"></div>
-    <div class="rectangle4"></div>    
-  </section>
-  <!-- Work-section -->
-  <section class="work-section grid">
-    <div class="work-section-cards">
-      <div>
-        <div class="cards-image flex">
-          <img src="asset/SnapshootPortfolio.jpg" class="img" alt="tonic"/>
-        </div>
-        <div>
-          <h3>Tonic</h3>
-          <p class="topic">
-            CANOPY <span class="grey"><i class="bx bxs-circle grey"></i>back End Dev<i class="bx bxs-circle grey"></i>2015</span>
-          </p>
-          <p class="summary">
-            A daily selection of privately personalized reads; no accounts or
-            sign-ups required.
-          </p>
-        </div>
-      </div>
-      <ul class="btn-grp flex">
-        <li><button type="submit">html</button></li>
-        <li><button type="submit">css</button></li>
-        <li><button type="submit">javaScript</button></li>
-      </ul>
-      <button class="last-btn" type="submit">See Project</button>
-    </div>
-    <div class="work-section-cards">
-      <div>
-        <div class="cards-image flex">
-          <img src="asset/SnapshootPortfolio(1).png" class="img" alt="availability"/>
-        </div>
-        <h3>Multi-Post Stories</h3>
-          <p class="topic">CANOPY <span class="grey"><i class="bx bxs-circle grey"></i>back End Dev <i class="bx bxs-circle grey"></i>2015</span></p>
-          <p class="summary">
-            A daily selection of privately personalized reads; no accounts or
-            sign-ups required.
-          </p>
-      </div>
-      <ul class="btn-grp flex">
-        <li><button type="submit">html</button></li>
-        <li><button type="submit">css</button></li>
-        <li><button type="submit">javaScript</button></li>
-      </ul>
-      <button class="last-btn" type="submit">See Project</button>
-    </div>
-    <div class="work-section-cards">
-      <div>
-        <div class="cards-image flex">
-          <img src="asset//SnapshootPortfolio(2).png" class="img" alt="tonic"/>
-        </div>
-        <h3>Tonic</h3>
-          <p class="topic">CANOPY <span class="grey"><i class="bx bxs-circle grey"></i>back End Dev <i
-                class="bx bxs-circle grey"></i>2015</span></p>
-          <p class="summary">
-            A daily selection of privately personalized reads; no accounts or
-            sign-ups required.
-          </p>
-      </div>
-      <ul class="btn-grp flex">
-        <li><button type="reset">html</button></li>
-        <li><button type="reset">css</button></li>
-        <li><button type="reset">javaScript</button></li>
-      </ul>
-      <button class="last-btn" type="submit">See Project</button>
-    </div>
-    <div class="work-section-cards">
-      <div>
-        <div class="cards-image flex">
-          <img src="asset/SnapshootPortfolio(3).png" class="img" alt="art printing"/>
-        </div>
-        <h3>Multi-Post Stories</h3>
-        <p class="topic">CANOPY <span class="grey"><i class="bx bxs-circle grey"></i>back End Dev <i
-              class="bx bxs-circle grey"></i>2015</span></p>
-        <p class="summary">
-          A daily selection of privately personalized reads; no accounts or
-          sign-ups required.
-        </p>
-      </div>
-      <ul class="btn-grp flex">
-        <li><button type="submit">html</button></li>
-        <li><button type="submit">css</button></li>
-        <li><button type="submit">javaScript</button></li>
-      </ul>
-      <button class="last-btn" type="submit">See Project</button>
-    </div>
-  </section>
-  <!-- About-me -->
-  <section class="About-me">
-    <div class="about-me-header">
-      <h2>About Myself</h2>
-      <p class="margin-top">
-        Hello I’m a software developer! I can help you build a product , feature or website Look through some of my work
-        and experience! If you like what you see and have a project you need coded, don’t hestiate to contact me.
-      </p>
-    </div>
-    <div class="connect flex">
-      <h3 class="margin-top">LET’S CONNECT</h3>
-      <ul class="icons flex">
-        <li>
-          <a href="#"><i class="bx bxl-twitter"></i></a>
-        </li>
-        <li>
-          <a href="#"><i class="bx bxl-linkedin"></i></a>
-        </li>
-        <li>
-          <a href="#"><i class="bx bxl-medium"></i></a>
-        </li>
-        <li>
-          <a href="#"><i class="bx bxl-github"></i></a>
-        </li>
-        <li>
-          <a href="#"><img src="asset/Vector.png" alt="peace" /></a>
-        </li>
-      </ul>
-    </div>
-    <button class="last-btn" type="submit">Get my resume</button>
-    <div class="languages">
-      <div class="language-text flex">
-        <h4>Languages</h4>
-        <i class='bx bx-chevron-down'></i>
-      </div>
-      <ul class="code-languages">
-        <li class="flex"><img src="asset/Ellipse1(1).png" alt="Ellipse">javaScript</li>
-        <li class="flex"><img src="asset/Ellipse1(2).png" alt="Ellipse">HTML</li>
-        <li class="flex"><img src="asset/Ellipse1(3).png" alt="Ellipse">CSS</li>
-      </ul>
-      <div class="fw-skill flex">
+      <div class="languages">
         <div class="language-text flex">
-          <h4>Frameworks</h4>
-          <i class='bx bx-chevron-down'></i>
+          <h4>Languages</h4>
+          <i class="bx bx-chevron-down"></i>
         </div>
-        <div class="line"></div>
-        <div class="language-text flex">
-          <h4>Skills</h4>
-          <i class='bx bx-chevron-down'></i>
-        </div>
-        <div class="line"></div>
-      </div>
-    </div>
-  </section>
-  <!-- contact-me -->
-  <section class="contact-me flex">
-    <div class="blue flex">
-      <h2>Contact me</h2>
-      <p>If you have an application you are interested in developing, a feature that you need built or a project that
-        needs coding. I’d love to help with it </p>
-        <form class="form flex" action="https://formspree.io/f/xwkzpvdn" method="post">
-          <div class="input flex">
-            <input name="firstname" type="text" placeholder="First Name" maxlength="30" required/>
+        <ul class="code-languages flex">
+          <li class="flex">
+            <img src="asset/Ellipse1.png" alt="Ellipse"/><span>javaScript</span>
+          </li>
+          <li class="flex">
+            <img src="asset/Ellipse2.png" alt="Ellipse"/>HTML
+          </li>
+          <li class="flex">
+            <img src="asset/Ellipse3.png" alt="Ellipse"/>CSS
+          </li>
+        </ul>
+        <div class="fw-skill flex">
+          <div class="language-text flex">
+            <h4>Frameworks</h4>
+            <i class="bx bx-chevron-down"></i>
           </div>
-          <input name="email" type="text" placeholder="Email address" maxlength="30" required/>
-          <textarea name="message" placeholder="Write your message here" maxlength="500" required></textarea>
-          <button class="last-btn" type="submit">Get It Touch</button>
-        </form>
-    </div>
-  </section>
-</body>
-
+          <div class="line"></div>
+          <div class="language-text flex">
+            <h4>Skills</h4>
+            <i class="bx bx-chevron-down"></i>
+          </div>
+          <div class="line"></div>
+        </div>
+      </div>
+    </section>
+    <!-- contact-me -->
+    <section class="contact-me flex" id="contact">
+      <div class="contact-me-background flex">
+        <div class="blue flex">
+          <h2>Contact me</h2>
+          <p>If you have an application you are interested in developing, a feature that you need built or a project that
+            needs coding. I’d love to help with it </p>
+            <form class="form flex" action="https://formspree.io/f/xwkzpvdn" method="post">
+              <div class="input flex">
+                <input name="fullname" type="text" placeholder="Full Name" maxlength="30" required/>
+              </div>
+              <input name="email" type="text" placeholder="Email address" maxlength="30" required/>
+              <textarea name="message" placeholder="Write your message here" maxlength="500" required></textarea>
+              <button class="last-btn" type="submit">Get It Touch</button>
+            </form>
+        </div>
+      </div>
+      <div class="illustration2"></div>
+    </section>
+  </body>
 </html>
