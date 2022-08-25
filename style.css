@@ -163,7 +163,7 @@ header {
   margin-bottom: 4px;
 }
 
-@media screen and (min-width: 430px) {
+@media screen and (min-width: 768px) {
   .hamburger-menu {
     display: none;
   }
@@ -221,7 +221,7 @@ header {
   top: 10%;
 }
 
-@media screen and (min-width: 940px) {
+@media screen and (min-width: 768px) {
   .illustration {
     background-image: none;
     content: url(asset/Header-laptop.png);
@@ -345,7 +345,7 @@ header {
   border: 1px solid var(--background-color);
 }
 
-@media screen and (min-width: 940px) {
+@media screen and (min-width: 768px) {
   .desk {
     content: url("asset/Snapshoot-Portfolio-desk.png");
   }
@@ -578,7 +578,7 @@ header {
   background-color: #dfe1e6;
 }
 
-@media screen and (min-width: 940px) {
+@media screen and (min-width: 768px) {
   .code-languages li {
     width: 7rem;
     height: 7rem;
@@ -685,7 +685,7 @@ form textarea::placeholder {
   font-family: inherit;
 }
 
-@media screen and (min-width: 944px) {
+@media screen and (min-width: 768px) {
   .contact-me-background {
     background-image: none;
   }
