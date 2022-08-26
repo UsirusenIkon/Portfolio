@@ -77,6 +77,18 @@ a {
   text-decoration: none;
 }
 
+a i:hover {
+  animation-delay: 2s;
+  transform: rotateY(360deg);
+  transition: all 2s ease;
+}
+
+a img:hover {
+  animation-delay: 2s;
+  transform: rotateY(360deg);
+  transition: all 2s ease;
+}
+
 /* $-Utility classes-$ */
 .flex {
   display: flex;
@@ -201,6 +213,7 @@ header {
 .hamburger-menu {
   flex-direction: column;
   margin-top: 6px;
+  background-color: var(--background-color);
 }
 
 .line {
