@@ -736,7 +736,7 @@ header {
   max-width: 28rem;
 }
 
-.form button {
+.form .last-btn {
   max-width: 110px;
 }
 
