@@ -145,14 +145,14 @@ header {
   font-size: 23px;
   line-height: 20px;
   color: var(--primary-color);
-  animation: move-right 2s ease-in;
+  animation: move-right 2s ease-in-out;
 }
 
 .logo:hover {
   /* animation: movedown 300ms ease-in; */
   animation-delay: 2s;
-  scale: 1.5;
-  transition: all 300ms ease;
+  transform: scaleX(1.2);
+  transition: all 0.3s ease-in-out;
 }
 
 @keyframes move-right {
@@ -162,6 +162,7 @@ header {
   }
 
   50% {
+    opacity: 0.5;
     transform: translateX(25px);
   }
 
@@ -200,7 +201,7 @@ header {
 
 .navbar {
   flex-direction: row-reverse;
-  animation: move-left 2s ease-in;
+  animation: move-left 2s ease-in-out;
 }
 
 .nav-menu {
