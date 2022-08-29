@@ -80,14 +80,14 @@ a {
 
 a i:hover {
   animation-delay: 2s;
-  transform: rotateY(360deg);
-  transition: all 2s ease;
+  scale: 1.5;
+  transition: all 300ms ease;
 }
 
 a img:hover {
   animation-delay: 2s;
-  transform: rotateY(360deg);
-  transition: all 2s ease;
+  scale: 1.5;
+  transition: all 300ms ease;
 }
 
 /* $-Utility classes-$ */
@@ -151,8 +151,8 @@ header {
 .logo:hover {
   /* animation: movedown 300ms ease-in; */
   animation-delay: 2s;
-  transform: rotateY(360deg);
-  transition: all 2s ease;
+  scale: 1.5;
+  transition: all 300ms ease;
 }
 
 @keyframes move-right {
@@ -205,6 +205,12 @@ header {
 
 .nav-menu {
   display: none;
+}
+
+.item a:hover {
+  animation-delay: 2s;
+  scale: 1.2;
+  transition: all 300ms ease;
 }
 
 .item {
@@ -344,7 +350,7 @@ header {
 .cards-image:hover {
   filter: drop-shadow(2px 2px 4px);
   scale: 1.1;
-  transition: all 700ms ease-in;
+  transition: all 300ms ease-out;
 }
 
 .work-section-content {
@@ -392,6 +398,11 @@ header {
   padding: 0.5em 0.9em;
   background-color: #ebebff;
   color: var(--primary-color);
+}
+
+.btn-grp button:hover {
+  scale: 1.1;
+  transition: all 300ms ease;
 }
 
 .ruby {
@@ -725,7 +736,7 @@ header {
   max-width: 28rem;
 }
 
-.form button {
+.form .last-btn {
   max-width: 110px;
 }
 
