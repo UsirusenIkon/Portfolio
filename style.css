@@ -747,6 +747,7 @@ header {
 
 input {
   height: 3em;
+  width: 100%;
   border-radius: 10px;
   padding: 0 1em;
   margin-bottom: 1.3rem;
@@ -758,6 +759,7 @@ input:invalid {
 
 textarea {
   height: 10em;
+  width: 100%;
   border-radius: 10px;
   padding: 1em;
   margin-bottom: 1rem;
