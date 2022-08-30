@@ -90,6 +90,10 @@ a img:hover {
   transition: all 300ms ease;
 }
 
+button:focus {
+  outline: 2px solid var(--primary-color);
+}
+
 /* $-Utility classes-$ */
 .flex {
   display: flex;
@@ -144,7 +148,7 @@ header {
   font-weight: 700;
   font-size: 23px;
   line-height: 20px;
-  color: var(--primary-color);
+  color: #0018f1;
   animation: move-right 2s ease-in-out;
 }
 
@@ -153,6 +157,12 @@ header {
   animation-delay: 2s;
   transform: scaleX(1.2);
   transition: all 0.3s ease-in-out;
+  color: var(--primary-color);
+}
+
+.logo:focus {
+  color: #0018f1;
+  outline: 2px solid var(--primary-color);
 }
 
 @keyframes move-right {
@@ -221,18 +231,15 @@ header {
 .hamburger-menu {
   flex-direction: column;
   background-color: var(--background-color);
+  padding: 2px 3px;
 }
 
 .line {
   height: 2px;
   width: 1.3rem;
-  background-color: var(--primary-color);
+  background-color: #0018f1;
   border-radius: 5rem;
-}
-
-/* stylelint-disable-next-line selector-type-no-unknown */
-.line:not(last-child) {
-  margin-bottom: 4px;
+  margin: 2px 0;
 }
 
 @media screen and (min-width: 768px) {
@@ -396,13 +403,17 @@ header {
   border-radius: 10px;
   border: none;
   padding: 0.5em 0.9em;
-  background-color: #ebebff;
-  color: var(--primary-color);
+  background-color: #e7e7fc;
+  color: #0018f1;
 }
 
 .btn-grp button:hover {
   scale: 1.1;
   transition: all 300ms ease;
+}
+
+.btn-grp:focus {
+  color: #0018f1;
 }
 
 .ruby {
