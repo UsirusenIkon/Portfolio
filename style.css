@@ -220,7 +220,6 @@ header {
 
 .hamburger-menu {
   flex-direction: column;
-  margin-top: 6px;
   background-color: var(--background-color);
 }
 
