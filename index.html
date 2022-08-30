@@ -19,7 +19,7 @@
         <div class="header-content flex">
           <a href="#home" class="logo">!kon</a>
           <nav class="navbar flex">
-            <button class="hamburger-menu flex">
+            <button class="hamburger-menu flex" type="menu">
               <span class="line"></span>
               <span class="line"></span>
               <span class="line"></span>
@@ -266,10 +266,16 @@
             needs coding. I’d love to help with it </p>
             <form class="form flex" action="https://formspree.io/f/xwkzpvdn" method="post">
               <div class="input flex">
-                <input name="fullname" type="text" placeholder="Full Name" maxlength="30" required/>
-              </div>
-              <input name="email" type="text" placeholder="Email address" maxlength="30" required/>
-              <textarea name="message" placeholder="Write your message here" maxlength="500" required></textarea>
+                <label for="user-name">
+                  <input name="fullname" type="text" placeholder="Full Name" maxlength="30" id="user-name" required/>
+                </label>
+                <label for="user-email">
+                  <input name="email" type="text" placeholder="Email address" maxlength="30" id="user-email" required/>
+                </label>
+              </div>              
+              <label for="user-message">
+                <textarea name="message" placeholder="Write your message here" maxlength="500" id="user-message" required></textarea>
+              </label>
               <button class="last-btn" type="submit">Get It Touch</button>
             </form>
         </div>
