@@ -7,13 +7,16 @@
    ![screenshot](asset/mobile-screenshot.png) ![screenshot](asset/desktop-screenshot.png)
 
    ![screenshot](asset/desktop-GIF.gif)
+   
+## <a href="https://github.com/UsirusenIkon/Portfolio">Live Demo</a>
+   https://usirusenikon.github.io/Portfolio/
      
    The objectives of this project is to:
     
-   -Understand how to parse a Figma design to create a UI.
-   -Flexbox to place elements in the page.
-   -Build a personal portfolio site.
-   -Use images and backgrounds to enhance the look of the website.
+   - Understand how to parse a Figma design to create a UI.
+   - Flexbox to place elements in the page.
+   - Build a personal portfolio site.
+   - Use images and backgrounds to enhance the look of the website.
 
 ## Built With
    - HTML & CSS (CSS Flex Box & Grid)
