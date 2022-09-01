@@ -19,15 +19,15 @@
         <div class="header-content flex">
           <a href="#home" class="logo">!kon</a>
           <nav class="navbar flex">
-            <button class="hamburger-menu flex">
+            <button class="hamburger-menu flex" type="submit">
               <span class="line"></span>
               <span class="line"></span>
               <span class="line"></span>
             </button>
             <ul class="nav-menu flex">
               <li class="item flex"><a href="#work">Portfolio</a></li>
-              <li class="item flex"><a href="#about">about</a></li>
-              <li class="item flex"><a href="#contact">contact</a></li>
+              <li class="item flex"><a href="#about">About</a></li>
+              <li class="item flex"><a href="#contact">Contact</a></li>
             </ul>
           </nav>
         </div>
@@ -230,7 +230,7 @@
       <div class="languages">
         <div class="language-text flex">
           <h4>Languages</h4>
-          <i class="bx bx-chevron-down"></i>
+          <button type="submit" class="hamburger-menu"><i class="bx bx-chevron-down"></i></button>
         </div>
         <ul class="code-languages flex">
           <li class="flex">
@@ -246,12 +246,16 @@
         <div class="fw-skill flex">
           <div class="language-text flex">
             <h4>Frameworks</h4>
-            <i class="bx bx-chevron-down"></i>
+            <button type="submit" class="hamburger-menu">
+              <i class="bx bx-chevron-down"></i>
+            </button>
           </div>
           <div class="line"></div>
           <div class="language-text flex">
             <h4>Skills</h4>
-            <i class="bx bx-chevron-down"></i>
+            <button type="submit" class="hamburger-menu">
+              <i class="bx bx-chevron-down"></i>
+            </button>
           </div>
           <div class="line"></div>
         </div>
@@ -266,10 +270,16 @@
             needs coding. I’d love to help with it </p>
             <form class="form flex" action="https://formspree.io/f/xwkzpvdn" method="post">
               <div class="input flex">
-                <input name="fullname" type="text" placeholder="Full Name" maxlength="30" required/>
-              </div>
-              <input name="email" type="text" placeholder="Email address" maxlength="30" required/>
-              <textarea name="message" placeholder="Write your message here" maxlength="500" required></textarea>
+                <label for="user-name">
+                  <input name="fullname" type="text" placeholder="Full Name" maxlength="30" id="user-name" required/>
+                </label>
+                <label for="user-email">
+                  <input name="email" type="text" placeholder="Email address" maxlength="30" id="user-email" required/>
+                </label>
+              </div>              
+              <label for="user-message">
+                <textarea name="message" placeholder="Write your message here" maxlength="500" id="user-message" required></textarea>
+              </label>
               <button class="last-btn" type="submit">Get It Touch</button>
             </form>
         </div>
