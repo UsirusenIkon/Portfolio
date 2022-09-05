@@ -178,7 +178,6 @@ header {
   }
 
   50% {
-    opacity: 0.5;
     transform: translateX(25px);
   }
 
@@ -218,7 +217,7 @@ header {
 .navbar {
   /* padding: 0 1rem; */
   flex-direction: row-reverse;
-  animation: move-left 2s ease-in-out;
+  animation: move-left 2s ease-in;
 }
 
 .nav-menu {
