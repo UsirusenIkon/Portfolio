@@ -8,8 +8,7 @@
 
    ![screenshot](asset/desktop-GIF.gif)
    
-## <a href="https://github.com/UsirusenIkon/Portfolio">Live Demo</a>
-   https://usirusenikon.github.io/Portfolio/
+## <a href="https://usirusenikon.github.io/Portfolio/">Live Demo</a>
      
    The objectives of this project is to:
     
