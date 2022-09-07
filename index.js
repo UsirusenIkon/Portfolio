@@ -262,4 +262,9 @@ popUpBtn.forEach((d, index) => d.addEventListener('click', () =>{
   modalContainer.classList.add('open');
   body.classList.toggle('overflow');
   const closePopUp = document.querySelector('.bx-x');
-}))
+
+  closePopUp.addEventListener('click', () => {
+    modalContainer.classList.remove('open');
+    body.classList.remove('overflow');
+  });
+}));
