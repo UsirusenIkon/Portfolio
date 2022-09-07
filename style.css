@@ -123,6 +123,7 @@ h2 {
 
 h3 {
   color: var(--l-connect);
+  margin-bottom: 10px;
 }
 
 /* $-header section-$ */
@@ -232,10 +233,10 @@ header {
     height: 100vh;
     width: 100%;
     top: 0;
-    right: -100%;
+    right: -150%;
     backdrop-filter: blur(6px);
     background-color: #0048ff78;
-    transition: 0.5s ease-in-out;
+    transition: 0.7s ease-in-out;
   }
 
   .nav-menu.slide {
@@ -400,6 +401,14 @@ header {
   justify-content: center;
 }
 
+.work-section-cards:nth-child(2) {
+  flex-direction: row-reverse;
+}
+
+.work-section-cards:nth-child(4) {
+  flex-direction: row-reverse;
+}
+
 .work-section-cards:hover {
   border: 1px solid #a7aeff;
   filter: drop-shadow(2px 2px 4px);
@@ -417,7 +426,6 @@ header {
 
 .cards-image:hover {
   filter: drop-shadow(2px 2px 4px);
-  scale: 1.1;
   transition: all 300ms ease-out;
 }
 
@@ -431,15 +439,15 @@ header {
   font-size: 13px;
   font-weight: 700;
   color: var(--p-text-color);
-  margin: 12px 0;
+  margin-bottom: 1rem;
 }
 
 .summary {
-  margin-bottom: 16px;
+  margin-bottom: 1rem;
 }
 
 .grey {
-  font-size: 10px;
+  font-size: 12px;
   color: var(--BED-color);
   width: 1rem;
   letter-spacing: 2px;
@@ -453,11 +461,7 @@ header {
 
 .btn-grp {
   margin-bottom: 25px;
-}
-
-/* stylelint-disable-next-line selector-type-no-unknown */
-.btn-grp :not(first-child) {
-  margin-right: 8px;
+  row-gap: 3px;
 }
 
 .btn-grp button {
@@ -466,6 +470,7 @@ header {
   padding: 0.5em 0.9em;
   background-color: #e7e7fc;
   color: #0018f1;
+  margin-right: 0.5em;
 }
 
 .btn-grp button:hover {
@@ -484,12 +489,12 @@ header {
 .last-btn {
   border-radius: 5px;
   border: 1px solid var(--last-btn-color);
-  padding: 1em 1em;
+  padding: 1em;
   background-color: var(--background-color);
   color: var(--last-btn-color);
   font-weight: 700;
   font-size: 0.8rem;
-  margin-bottom: 17px;
+  margin-bottom: 5px;
 }
 
 .last-btn:active {
@@ -505,171 +510,185 @@ header {
   transition: all 400ms ease-in;
 }
 
-@media screen and (min-width: 768px) {
-  .desk {
-    content: url("asset/Snapshoot-Portfolio-desk.png");
+/* -- modal -- */
+.modal-container {
+  position: fixed;
+  top: -100%;
+  width: 100%;
+  height: 100vh;
+  z-index: 1000;
+  justify-content: center;
+  align-items: center;
+  background-color: #27508c4e;
+  backdrop-filter: blur(6px);
+}
+
+.modal-container.open {
+  top: 0;
+  animation: scale-up-ver-center 0.7s;
+}
+
+.modal {
+  position: relative;
+  width: 80%;
+  height: 90%;
+  padding: 1em;
+  background-color: var(--background-color);
+  border-radius: 8px;
+  line-height: 1.2em;
+  margin: 2em;
+  overflow-y: scroll;
+}
+
+.modal::-webkit-scrollbar {
+  display: none;
+}
+
+.paratext {
+  font-weight: 700;
+}
+
+.modal .cards-image {
+  margin: 1em 0;
+  justify-content: flex-start;
+}
+
+.modal-img {
+  width: 94%;
+  height: 12em;
+  min-height: 100%;
+}
+
+.btn-link {
+  width: 100%;
+  justify-content: space-between;
+}
+
+.stroke {
+  height: 1px;
+  width: 100%;
+  background-color: rgb(227, 227, 227);
+  margin: 1rem 0;
+}
+
+.end-btn {
+  align-items: center;
+  border-radius: 5px;
+  border: 1px solid var(--last-btn-color);
+  padding: 1em;
+  background-color: var(--background-color);
+  color: var(--last-btn-color);
+  font-weight: 700;
+  font-size: 0.8rem;
+}
+
+.alink {
+  align-items: center;
+  background-color: var(--background-color);
+  color: var(--last-btn-color);
+  font-weight: 700;
+  font-size: 0.8rem;
+}
+
+.hub {
+  font-size: 1.5rem;
+  margin: auto 2px;
+  color: var(--last-btn-color);
+}
+
+.bx-log-out-circle {
+  transform: rotate(135deg);
+}
+
+.bx-x {
+  position: absolute;
+  top: 1%;
+  right: 1%;
+}
+
+.modal-info {
+  flex-direction: column;
+}
+
+.btn-family {
+  flex-direction: column;
+  width: 100%;
+}
+
+.fst-btn-grp {
+  flex-direction: column;
+}
+
+/* stylelint-disable-next-line no-descending-specificity */
+.fst-btn-grp button {
+  border-radius: 10px;
+  border: none;
+  padding: 0.5em 0.9em;
+  background-color: #e7e7fc;
+  color: #0018f1;
+  margin: 0.8em 0.5em 0 0;
+}
+
+.fst-btn-grp button:hover {
+  scale: 1.1;
+  transition: all 300ms ease;
+}
+
+.fst-btn-grp:focus {
+  color: #0018f1;
+}
+
+.desktop {
+  display: none;
+}
+
+@media screen and (min-width: 760px) {
+  .modal {
+    width: max-content;
+    height: max-content;
   }
 
-  .grey {
-    margin: 0 9px;
+  .modal-img {
+    width: 100%;
+    max-width: 40rem;
+    height: 20rem;
+    min-height: 100%;
   }
 
-  .desk-span10 {
-    visibility: hidden;
-    position: relative;
+  .modal-info {
+    flex-direction: row;
   }
 
-  .desk-span10::after {
-    content: "FACEBOOK";
-    visibility: visible;
+  .para-length {
+    width: 16rem;
+    max-width: 100%;
+    margin-right: 0.5rem;
+  }
+
+  .btn-family {
+    flex-direction: column;
+    width: max-content;
+    max-width: 100%;
+  }
+
+  .end-btn {
+    padding: 0.5em;
+  }
+
+  .desktop {
     display: block;
-    position: absolute;
-    top: 0.3px;
+  }
+}
+
+@keyframes scale-up-ver-center {
+  0% {
+    -webkit-transform: scaleY(0.4);
+    transform: scaleY(0.4);
   }
 
-  .desk-span11 {
-    visibility: hidden;
-    position: relative;
-  }
-
-  .desk-span11::after {
-    content: "Full Stack Dev";
-    width: 10em;
-    visibility: visible;
-    display: block;
-    position: absolute;
-    top: -1.1px;
-    right: 1px;
-  }
-
-  .desk-summary {
-    visibility: hidden;
-    position: relative;
-  }
-
-  .desk-summary::after {
-    content: "Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.";
-    visibility: visible;
-    display: block;
-    position: absolute;
-    top: -1.1px;
-    right: 1px;
-  }
-
-  .buttons {
-    position: relative;
-    top: 1.5rem;
-  }
-
-  .ruby {
-    display: contents;
-  }
-
-  .desk1 {
-    content: url(asset/SnapshootPortfolio3.png);
-  }
-
-  /* card 3 */
-  .fb {
-    visibility: hidden;
-    position: relative;
-  }
-
-  .fb::after {
-    content: "Facebook 360";
-    visibility: visible;
-    display: block;
-    position: absolute;
-    top: 1.1px;
-  }
-
-  .desk-summary3 {
-    visibility: hidden;
-    position: relative;
-  }
-
-  .desk-summary3::after {
-    content: "Exploring the future of media in Facebook's first Virtual Reality app; a place to discover and enjoy 360 photos and videos on Gear VR.";
-    visibility: visible;
-    display: block;
-    position: absolute;
-    top: 1.1px;
-  }
-
-  .desk2 {
-    content: url(asset/SnapshootPortfolio.jpg);
-  }
-
-  /* card4 */
-  .ub-nav {
-    visibility: hidden;
-    position: relative;
-  }
-
-  .ub-nav::after {
-    content: "Uber Navigation";
-    visibility: visible;
-    display: block;
-    position: absolute;
-    top: 1.1px;
-  }
-
-  .desk-span20 {
-    visibility: hidden;
-    position: relative;
-    margin-right: -2rem;
-  }
-
-  .desk-span20::after {
-    top: 0.3px;
-    content: "Uber";
-    visibility: visible;
-    display: block;
-    position: absolute;
-  }
-
-  .desk-span21 {
-    visibility: hidden;
-    position: relative;
-    margin-right: 1rem;
-  }
-
-  .desk-span21::after {
-    content: "Lead Developer";
-    width: 11em;
-    visibility: visible;
-    display: block;
-    position: absolute;
-    top: -1.1px;
-    left: 0.1px;
-  }
-
-  .desk-span22 {
-    visibility: hidden;
-    position: relative;
-  }
-
-  .desk-span22::after {
-    content: "2018";
-    width: 11em;
-    visibility: visible;
-    display: block;
-    position: absolute;
-    top: -1.1px;
-    left: 0.1px;
-  }
-
-  .desk-summary4 {
-    visibility: hidden;
-    position: relative;
-  }
-
-  .desk-summary4::after {
-    content: "A smart assistant to make driving more safe, efficient, and fun by unlocking your most expensive computer: your car.";
-    visibility: visible;
-    display: block;
-    position: absolute;
-    top: 1.1px;
+  100% {
+    -webkit-transform: scaleY(1);
+    transform: scaleY(1);
   }
 }
 
