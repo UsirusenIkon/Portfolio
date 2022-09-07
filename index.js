@@ -2,7 +2,6 @@ const hamburger = document.querySelector('.hamburger-menu');
 const nav = document.querySelector('.nav-menu');
 const links = document.querySelectorAll('.nav-link');
 const body = document.querySelector('body');
-
 // menu button & links
 hamburger.addEventListener('click', () => {
   nav.classList.toggle('slide');
@@ -24,11 +23,11 @@ const workSection = [
 
     featuredImage: {
       url: 'asset/SnapshootPortfolio.jpg',
-      alt: 'tonic'
+      alt: 'tonic',
     },
-    
+
     title: 'Tonic',
-    
+
     details: {
       customer: 'CANOPY',
       job: 'Back End Dev',
@@ -58,11 +57,11 @@ const workSection = [
 
     featuredImage: {
       url: 'asset/SnapshootPortfolio1.png',
-      alt: 'Multi Post Stories'
+      alt: 'Multi Post Stories',
     },
-    
+
     title: 'Multi-Post Stories',
-    
+
     details: {
       customer: 'CANOPY',
       job: 'Back End Dev',
@@ -79,7 +78,7 @@ const workSection = [
       html: 'html',
       css: 'css',
       js: 'javaScript',
-      ruby: 'ruby on rails'
+      ruby: 'ruby on rails',
     },
 
     link: {
@@ -93,11 +92,11 @@ const workSection = [
 
     featuredImage: {
       url: 'asset/SnapshootPortfolio2.png',
-      alt: 'tonic'
+      alt: 'tonic',
     },
-    
+
     title: 'Tonic',
-    
+
     details: {
       customer: 'CANOPY',
       job: 'Back End Dev',
@@ -114,7 +113,7 @@ const workSection = [
       html: 'html',
       css: 'css',
       js: 'javaScript',
-      ruby: 'ruby on rails'
+      ruby: 'ruby on rails',
     },
 
     link: {
@@ -128,11 +127,11 @@ const workSection = [
 
     featuredImage: {
       url: 'asset/SnapshootPortfolio3.png',
-      alt: 'tonic'
+      alt: 'tonic',
     },
-    
+
     title: 'Multi-Post stories',
-    
+
     details: {
       customer: 'CANOPY',
       job: 'Back End Dev',
@@ -149,7 +148,7 @@ const workSection = [
       html: 'html',
       css: 'css',
       js: 'javaScript',
-      ruby: 'ruby on rails'
+      ruby: 'ruby on rails',
     },
 
     link: {
@@ -157,10 +156,9 @@ const workSection = [
       sources: 'https://github.com/UsirusenIkon/Portfolio',
     },
   },
-]
+];
 
 const works = document.querySelector('.work-section');
-const invert = document.querySelector('.work-section-cards');
 
 function loadCards() {
   workSection.forEach((card) => {
@@ -172,12 +170,8 @@ function loadCards() {
       <div class="work-section-content">
         <h3>${card.title}</h3>
         <p class="topic">
-          ${card.details.customer}
-          <span class="grey"
-            ><i class="bx bxs-circle grey"></i>${card.details.job}<i
-              class="bx bxs-circle grey"
-            ></i
-            >${card.details.year}</span>
+          ${card.details.customer}<span class="grey"><i class="bx bxs-circle grey"></i>${card.details.job}
+          <i class="bx bxs-circle grey"></i>${card.details.year}</span>
         </p>    
         <p class="summary">
           ${card.description.summary}
@@ -190,37 +184,30 @@ function loadCards() {
         </ul>
         <button class="last-btn popup-btn" type="submit">See Project</button>
       </div>
-    </div>;`
+    </div>`;
   });
 }
 loadCards();
 
+const popUp = document.querySelector('.modal');
+
 function loadModal(index) {
-  popUp.innerHTML =`
+  popUp.innerHTML = `
     <div>
       <h3>${workSection[index].title}</h3>
       <p class="paratext">
         ${workSection[index].details.customer}
-        <span class="grey"
-          ><i class="bx bxs-circle grey"></i>${workSection[index].details.job}<i
-            class="bx bxs-circle grey"
-          ></i
-          >${workSection[index].details.year}</span
-        >
+        <span class="grey"><i class="bx bxs-circle grey"></i>${workSection[index].details.job}
+          <i class="bx bxs-circle grey"></i>${workSection[index].details.year}</span>
       </p>
       <div class="cards-image flex">
-        <img
-          src=${workSection[index].featuredImage.url}
-          class="modal-img"
-          alt=${workSection[index].featuredImage.alt}
-        />
+        <img src=${workSection[index].featuredImage.url} class="modal-img"
+          alt=${workSection[index].featuredImage.alt}/>
       </div>
     </div>
     <div class="modal-info flex">
       <div class="para-length">
-        <p>
-        ${workSection[index].description.more}
-        </p>
+        <p>${workSection[index].description.more}</p>
       </div>
       <div class="btn-family flex">
         <div class="fst-btn-grp flex">
@@ -254,15 +241,13 @@ function loadModal(index) {
 }
 
 const modalContainer = document.querySelector('.modal-container');
-const popUp = document.querySelector('.modal');
 const popUpBtn = document.querySelectorAll('.popup-btn');
 
-popUpBtn.forEach((d, index) => d.addEventListener('click', () =>{
+popUpBtn.forEach((d, index) => d.addEventListener('click', () => {
   loadModal(index);
   modalContainer.classList.add('open');
   body.classList.toggle('overflow');
   const closePopUp = document.querySelector('.bx-x');
-
   closePopUp.addEventListener('click', () => {
     modalContainer.classList.remove('open');
     body.classList.remove('overflow');
