@@ -260,7 +260,6 @@ const popUpBtn = document.querySelectorAll('.popup-btn');
 popUpBtn.forEach((d, index) => d.addEventListener('click', () =>{
   loadModal(index);
   modalContainer.classList.add('open');
-
+  body.classList.toggle('overflow');
   const closePopUp = document.querySelector('.bx-x');
 }))
-
