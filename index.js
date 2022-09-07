@@ -264,4 +264,8 @@ form.addEventListener('submit', (e) => {
     error.classList.add('msg');
     error.innerHTML = 'email should be in lower case';
   }
+  else {
+    error.classList.remove('msg');
+    form.submit();
+  }
 });
