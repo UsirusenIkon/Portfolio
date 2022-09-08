@@ -231,7 +231,7 @@ header {
     position: fixed;
     flex-direction: column;
     height: 100vh;
-    width: 100%;
+    width: 70%;
     top: 0;
     right: -150%;
     backdrop-filter: blur(6px);
@@ -548,14 +548,22 @@ header {
   font-weight: 700;
 }
 
+.para-length {
+  font-size: 11px;
+  line-height: 0.9rem;
+  letter-spacing: 1px;
+  width: 90%;
+  text-justify: auto;
+}
+
 .modal .cards-image {
   margin: 1em 0;
   justify-content: flex-start;
 }
 
 .modal-img {
-  width: 94%;
-  height: 12em;
+  width: 80%;
+  height: auto;
   min-height: 100%;
 }
 
@@ -645,7 +653,6 @@ header {
 @media screen and (min-width: 760px) {
   .modal {
     width: max-content;
-    height: max-content;
   }
 
   .modal-img {
@@ -822,6 +829,7 @@ header {
 }
 
 .form {
+  position: relative;
   flex-direction: column;
   width: 100%;
   max-width: 28rem;
@@ -852,7 +860,7 @@ textarea {
   width: 100%;
   border-radius: 10px;
   padding: 1em;
-  margin-bottom: 1rem;
+  margin-bottom: 1.6rem;
 }
 
 textarea:focus {
@@ -889,4 +897,25 @@ textarea:focus {
   .form .last-btn {
     align-self: center;
   }
+}
+
+.error {
+  position: absolute;
+  bottom: 16%;
+  height: 1.5rem;
+  font-size: 1.2rem;
+  font-weight: 700;
+  font-style: normal;
+  letter-spacing: 2px;
+  text-transform: capitalize;
+  text-align: start;
+  text-shadow: 2px 2px 2px rgba(255, 255, 255, 0.744);
+  color: rgb(210, 9, 9);
+  width: 100%;
+  border-radius: 10px;
+  display: none;
+}
+
+.error.msg {
+  display: block;
 }

@@ -141,7 +141,7 @@ const workSection = [
     description: {
       summary: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
 
-      more: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer scrambled it, he died.",
+      more: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer scrambled it, he died. Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer scrambled it, he died.",
     },
 
     technologies: {
@@ -243,7 +243,7 @@ function loadModal(index) {
 const modalContainer = document.querySelector('.modal-container');
 const popUpBtn = document.querySelectorAll('.popup-btn');
 
-popUpBtn.forEach((d, index) => d.addEventListener('click', () => {
+popUpBtn.forEach((btn, index) => btn.addEventListener('click', () => {
   loadModal(index);
   modalContainer.classList.add('open');
   body.classList.toggle('overflow');
@@ -253,3 +253,18 @@ popUpBtn.forEach((d, index) => d.addEventListener('click', () => {
     body.classList.remove('overflow');
   });
 }));
+
+const form = document.querySelector('.form');
+const formEmail = document.querySelector('#user-email');
+const error = document.querySelector('.error');
+
+form.addEventListener('submit', (e) => {
+  e.preventDefault();
+  if (formEmail.value !== formEmail.value.toLowerCase()) {
+    error.classList.add('msg');
+    error.innerHTML = 'email should be in lower case';
+  } else {
+    error.classList.remove('msg');
+    form.submit();
+  }
+});
