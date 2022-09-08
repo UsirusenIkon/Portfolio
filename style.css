@@ -548,14 +548,22 @@ header {
   font-weight: 700;
 }
 
+.para-length {
+  font-size: 11px;
+  line-height: 0.9rem;
+  letter-spacing: 1px;
+  width: 90%;
+  text-justify: auto;
+}
+
 .modal .cards-image {
   margin: 1em 0;
   justify-content: flex-start;
 }
 
 .modal-img {
-  width: 94%;
-  height: 12em;
+  width: 80%;
+  height: auto;
   min-height: 100%;
 }
 
@@ -645,7 +653,6 @@ header {
 @media screen and (min-width: 760px) {
   .modal {
     width: max-content;
-    height: max-content;
   }
 
   .modal-img {

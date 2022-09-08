@@ -141,7 +141,7 @@ const workSection = [
     description: {
       summary: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
 
-      more: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer scrambled it, he died.",
+      more: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer scrambled it, he died. Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer scrambled it, he died.",
     },
 
     technologies: {
@@ -263,7 +263,7 @@ form.addEventListener('submit', (e) => {
   if (formEmail.value !== formEmail.value.toLowerCase()) {
     error.classList.add('msg');
     error.innerHTML = 'email should be in lower case';
-  }
+  };
   else {
     error.classList.remove('msg');
     form.submit();
