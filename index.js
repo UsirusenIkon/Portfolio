@@ -167,7 +167,7 @@ function loadCards() {
       <div class="cards-image flex">
         <img src=${card.featuredImage.url} class="img desk" alt=${card.featuredImage.alt}/>
       </div>
-      <div class="work-section-content">
+      <div class="work-section-content wf">
         <h3>${card.title}</h3>
         <p class="topic">
           ${card.details.customer}<span class="grey"><i class="bx bxs-circle grey"></i>${card.details.job}
@@ -201,7 +201,7 @@ function loadModal(index) {
           <i class="bx bxs-circle grey"></i>${workSection[index].details.year}</span>
       </p>
       <div class="cards-image flex">
-        <img src=${workSection[index].featuredImage.url} class="modal-img"
+        <img src=${workSection[index].featuredImage.url} class="modal-img wf"
           alt=${workSection[index].featuredImage.alt}/>
       </div>
     </div>
@@ -209,7 +209,7 @@ function loadModal(index) {
       <div class="para-length">
         <p>${workSection[index].description.more}</p>
       </div>
-      <div class="btn-family flex">
+      <div class="btn-family wf flex">
         <div class="fst-btn-grp flex">
           <ul class="flex">
             <li><button type="submit">html</button></li>
@@ -222,8 +222,8 @@ function loadModal(index) {
             <li><button class="desktop" type="submit">bootstrap</button></li>
           </ul>
         </div>
-        <div class="stroke"></div>
-        <ul class="btn-link flex">
+        <div class="stroke wf"></div>
+        <ul class="btn-link wf flex">
           <li>
             <button class="end-btn flex">
             <a href="${workSection[index].link.seeLive}" class="alink flex">See live</a><i class="bx bx-log-out-circle hub"></i>
@@ -257,14 +257,31 @@ popUpBtn.forEach((btn, index) => btn.addEventListener('click', () => {
 const form = document.querySelector('.form');
 const formEmail = document.querySelector('#user-email');
 const error = document.querySelector('.error');
+const formName = document.querySelector('#user-name');
+const formTxtArea = document.querySelector('#user-message');
 
 form.addEventListener('submit', (e) => {
   e.preventDefault();
+
+  const storage = {};
+
   if (formEmail.value !== formEmail.value.toLowerCase()) {
     error.classList.add('msg');
     error.innerHTML = 'email should be in lower case';
   } else {
+    storage.name = formName.value;
+    storage.email = formEmail.value;
+    storage.txtArea = formTxtArea.value;
     error.classList.remove('msg');
     form.submit();
   }
+  localStorage.setItem('user',JSON.stringify(storage));
+
 });
+
+function callLocalStorage () {
+  const data = JSON.parse(localStorage.getItem('user'));
+  formName.value = data.name;
+}
+
+callLocalStorage ();
