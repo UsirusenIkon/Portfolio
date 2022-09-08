@@ -282,6 +282,7 @@ form.addEventListener('submit', (e) => {
 function callLocalStorage () {
   const data = JSON.parse(localStorage.getItem('user'));
   formName.value = data.name;
+  formTxtArea.value = data.txtArea;
 }
 
 callLocalStorage ();
