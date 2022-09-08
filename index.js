@@ -263,27 +263,26 @@ const formTxtArea = document.querySelector('#user-message');
 form.addEventListener('submit', (e) => {
   e.preventDefault();
 
-  const storage = {};
-
   if (formEmail.value !== formEmail.value.toLowerCase()) {
     error.classList.add('msg');
     error.innerHTML = 'email should be in lower case';
   } else {
-    storage.name = formName.value;
-    storage.email = formEmail.value;
-    storage.txtArea = formTxtArea.value;
+    const storage = {
+      name: formName.value,
+      email: formEmail.value,
+      txtArea: formTxtArea.value,
+    };
     error.classList.remove('msg');
+    localStorage.setItem('user', JSON.stringify(storage));
     form.submit();
   }
-  localStorage.setItem('user',JSON.stringify(storage));
-
 });
 
-function callLocalStorage () {
+window.addEventListener('DOMContentLoaded', () => {
   const data = JSON.parse(localStorage.getItem('user'));
-  formName.value = data.name;
-  formTxtArea.value = data.txtArea;
-  formEmail.value = data.email;
-}
-
-callLocalStorage ();
+  if (data) {
+    formName.value = data.name;
+    formEmail.value = data.email;
+    formTxtArea.value = data.txtArea;
+  }
+});
