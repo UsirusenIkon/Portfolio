@@ -196,7 +196,7 @@ function loadModal(index) {
     <div>
       <h3>${workSection[index].title}</h3>
       <p class="paratext">
-        ${workSection[index].details.customer}
+        ${workSection[index].details.customer.KKK}
         <span class="grey"><i class="bx bxs-circle grey"></i>${workSection[index].details.job}
           <i class="bx bxs-circle grey"></i>${workSection[index].details.year}</span>
       </p>
@@ -245,7 +245,7 @@ const popUpBtn = document.querySelectorAll('.popup-btn');
 const modal = document.querySelector('.modal');
 
 popUpBtn.forEach((btn, index) => btn.addEventListener('click', () => {
-  loadModal(index);
+
   modalContainer.classList.add('open');
   modal.classList.add('active');
   body.classList.toggle('overflow');
