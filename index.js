@@ -231,7 +231,7 @@ function loadModal(index) {
           </li>
           <li>
             <button class="end-btn flex">
-            <a href="${workSection[index].link.sources}" class="alink flex">See live</a><i class="bx bxl-github hub"></i>
+            <a href="${workSection[index].link.sources}" class="alink flex">See source</a><i class="bx bxl-github hub"></i>
             </button>
           </li>
         </ul>
@@ -242,15 +242,18 @@ function loadModal(index) {
 
 const modalContainer = document.querySelector('.modal-container');
 const popUpBtn = document.querySelectorAll('.popup-btn');
+const modal = document.querySelector('.modal');
 
 popUpBtn.forEach((btn, index) => btn.addEventListener('click', () => {
   loadModal(index);
   modalContainer.classList.add('open');
+  modal.classList.add('active');
   body.classList.toggle('overflow');
   const closePopUp = document.querySelector('.bx-x');
   closePopUp.addEventListener('click', () => {
-    modalContainer.classList.remove('open');
+    modal.classList.remove('active');
     body.classList.remove('overflow');
+    modalContainer.classList.remove('open');
   });
 }));
 

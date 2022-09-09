@@ -334,7 +334,7 @@ h3 {
 }
 
 .headline-info {
-  padding: 0 0 0 1.2rem;
+  padding-left: 1.2rem;
   margin-top: 3.5rem;
   width: 96%;
   max-width: 600px;
@@ -387,7 +387,7 @@ h3 {
 
 .work-section h3 {
   color: black;
-  font-size: 2em;
+  font-size: 1.5em;
 }
 
 .work-section-cards {
@@ -512,18 +512,21 @@ h3 {
 /* -- modal -- */
 .modal-container {
   position: fixed;
-  top: -100%;
+  top: 0;
   height: 100vh;
   z-index: 1000;
   justify-content: center;
   align-items: center;
   background-color: #27508c4e;
   backdrop-filter: blur(6px);
+  transition: 0.7s;
+  opacity: 0;
+  pointer-events: none;
 }
 
 .modal-container.open {
-  top: 0;
-  animation: scale-up-ver-center 0.7s;
+  opacity: 1;
+  pointer-events: visible;
 }
 
 .modal {
@@ -536,6 +539,10 @@ h3 {
   line-height: 1.2em;
   margin: 2em;
   overflow-y: scroll;
+}
+
+.modal.active {
+  animation: scale-up-ver-center 0.7s;
 }
 
 .modal::-webkit-scrollbar {
@@ -683,6 +690,11 @@ h3 {
 
 @keyframes scale-up-ver-center {
   0% {
+    -webkit-transform: scaleY(0);
+    transform: scaleY(0);
+  }
+
+  50% {
     -webkit-transform: scaleY(0.4);
     transform: scaleY(0.4);
   }
@@ -690,6 +702,23 @@ h3 {
   100% {
     -webkit-transform: scaleY(1);
     transform: scaleY(1);
+  }
+}
+
+@keyframes scale-down-ver-center {
+  0% {
+    -webkit-transform: scaleY(1);
+    transform: scaleY(1);
+  }
+
+  50% {
+    -webkit-transform: scaleY(0.4);
+    transform: scaleY(0.4);
+  }
+
+  100% {
+    -webkit-transform: scaleY(0);
+    transform: scaleY(0);
   }
 }
 
