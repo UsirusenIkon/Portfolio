@@ -34,7 +34,7 @@
    - To clone my repository run this command `git clone https://github.com/UsirusenIkon/Portfolio.git`  
 
 ## Author
-    👤 **Usirusen Ikon**
+   👤 **Usirusen Ikon**
    - GitHub: [@UsirusenIkon](https://github.com/UsirusenIkon)
    - Twitter: [@Usirusen_Ikon](https://twitter.com/Usirusen_Ikon)
    - LinkedIn: [Usirusen Ikon](https://www.linkedin.com/in/usirusen-ikon-775855174/)
