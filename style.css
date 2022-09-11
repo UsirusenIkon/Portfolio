@@ -367,12 +367,26 @@ h3 {
     background-image: none;
     content: url(asset/Header-laptop.png);
     position: absolute;
-    width: 93%;
-    top: 10%;
+    width: 85%;
+    top: 6%;
+    left: 10%;
+  }
+
+  .headline-container {
+    height: 100vh;
+    width: 100vw;
+    justify-content: unset;
+  }
+
+  .headline {
+    left: 10%;
+    width: 80%;
   }
 
   .headline-info {
     margin-top: 6rem;
+    width: 65%;
+    max-width: unset;
   }
 }
 
@@ -727,16 +741,16 @@ h3 {
   background-color: var(--background-color);
   border-top-right-radius: 100px;
   padding: 7em 1.5em;
-  flex-wrap: wrap;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 
 .about-me-content {
-  max-width: 24rem;
+  width: 80%;
 }
 
 .about-me-info {
-  max-width: 25rem;
+  width: 90%;
 }
 
 .about-me-content h2 {
@@ -754,6 +768,10 @@ h3 {
   justify-content: space-between;
   padding-right: 3em;
   margin: 2rem 0;
+}
+
+.dropdown-menu {
+  background: transparent;
 }
 
 .code-languages {
@@ -795,10 +813,16 @@ h3 {
     width: 7rem;
     height: 7rem;
     padding: 8px;
+    margin: 0.6rem;
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
     border-radius: 1rem;
+  }
+
+  .About-me {
+    flex-direction: row;
+    padding: 4em;
   }
 }
 
@@ -894,17 +918,24 @@ textarea:focus {
 }
 
 @media screen and (min-width: 768px) {
+  .contact-me {
+    position: relative;
+  }
+
   .contact-me-background {
     background-image: none;
+  }
+
+  .blue {
+    height: 83vh;
   }
 
   .illustration2 {
     content: url(asset/contact-form-background.png);
     position: absolute;
-    width: 86%;
-    height: 35rem;
-    left: 7%;
-    padding: 2rem 1rem;
+    width: 77%;
+    top: 13%;
+    left: 12%;
   }
 
   .form .last-btn {
