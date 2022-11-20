@@ -82,15 +82,13 @@ a {
   text-decoration: none;
 }
 
-a i:hover {
-  animation-delay: 2s;
-  scale: 1.5;
+a:hover {
+  scale: 1.1;
   transition: all 300ms ease;
 }
 
 a img:hover {
-  animation-delay: 2s;
-  scale: 1.5;
+  scale: 1.1;
   transition: all 300ms ease;
 }
 
@@ -150,6 +148,7 @@ h3 {
   position: relative;
   height: 2.2em;
   align-items: center;
+  padding: 1.5rem 0;
 }
 
 .logo {
@@ -157,14 +156,21 @@ h3 {
   padding: 0 1rem;
   font-size: 23px;
   line-height: 20px;
+}
+
+.logo-items {
+  align-items: center;
+  gap: 0.1rem;
+}
+
+.logo-item {
+  font-style: normal;
+  font-size: 1rem;
   color: #0018f1;
-  animation: move-right 2s ease-in-out;
 }
 
 .logo:hover {
-  /* animation: movedown 300ms ease-in; */
-  animation-delay: 2s;
-  transform: scaleX(1.2);
+  filter: drop-shadow(2px, 2px, 2px);
   transition: all 0.3s ease-in-out;
   color: var(--primary-color);
 }
@@ -174,52 +180,8 @@ h3 {
   outline: 2px solid var(--primary-color);
 }
 
-@keyframes move-right {
-  0% {
-    opacity: 0;
-    transform: translateX(-100px);
-  }
-
-  50% {
-    transform: translateX(25px);
-  }
-
-  100% {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-
-@keyframes move-left {
-  0% {
-    opacity: 0;
-    transform: translateX(100px);
-  }
-
-  50% {
-    transform: translateX(-25px);
-  }
-
-  100% {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-
-@keyframes appear {
-  0% {
-    opacity: 0;
-    transform: translateY(-50px);
-  }
-
-  100% {
-    opacity: 1;
-  }
-}
-
 .navbar {
   flex-direction: row-reverse;
-  animation: move-left 2s ease-in;
 }
 
 .nav-menu {
@@ -423,12 +385,6 @@ h3 {
   flex-direction: row-reverse;
 }
 
-.work-section-cards:hover {
-  border: 1px solid #a7aeff;
-  filter: drop-shadow(2px 2px 4px);
-  transition: all 700ms ease-in;
-}
-
 .flip {
   flex-direction: row-reverse;
 }
@@ -436,11 +392,6 @@ h3 {
 .cards-image {
   margin: 1rem;
   justify-content: center;
-}
-
-.cards-image:hover {
-  filter: drop-shadow(2px 2px 4px);
-  transition: all 300ms ease-out;
 }
 
 .work-section-content {
