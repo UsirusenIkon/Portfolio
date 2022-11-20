@@ -200,44 +200,46 @@ function loadModal(index) {
         <span class="grey"><i class="bx bxs-circle grey"></i>${workSection[index].details.job}
           <i class="bx bxs-circle grey"></i>${workSection[index].details.year}</span>
       </p>
-      <div class="cards-image flex">
-        <img src=${workSection[index].featuredImage.url} class="modal-img wf"
-          alt=${workSection[index].featuredImage.alt}/>
-      </div>
-    </div>
-    <div class="modal-info flex">
-      <div class="para-length">
-        <p>${workSection[index].description.more}</p>
-      </div>
-      <div class="btn-family wf flex">
-        <div class="fst-btn-grp flex">
-          <ul class="flex">
-            <li><button type="submit">html</button></li>
-            <li><button type="submit">css</button></li>
-            <li><button type="submit">javascript</button></li>
-          </ul>
-          <ul class="flex">
-            <li><button class="desktop" type="submit">github</button></li>
-            <li><button class="desktop" type="submit">ruby</button></li>
-            <li><button class="desktop" type="submit">bootstrap</button></li>
-          </ul>
+      <div class='modal-content flex'>
+        <div class="cards-image flex">
+          <img src=${workSection[index].featuredImage.url} class="modal-img wf"
+            alt=${workSection[index].featuredImage.alt}/>
         </div>
-        <div class="stroke wf"></div>
-        <ul class="btn-link wf flex">
-          <li>
-            <button class="end-btn flex">
-            <a href="${workSection[index].link.seeLive}" class="alink flex">See live</a><i class="bx bx-log-out-circle hub"></i>
-            </button>
-          </li>
-          <li>
-            <button class="end-btn flex">
-            <a href="${workSection[index].link.sources}" class="alink flex">See source</a><i class="bx bxl-github hub"></i>
-            </button>
-          </li>
-        </ul>
+        <div class="modal-info flex">
+          <div class="para-length">
+            <p>${workSection[index].description.more}</p>
+          </div>
+          <div class="btn-family wf flex">
+            <div class="fst-btn-grp flex">
+              <ul class="flex">
+                <li><button type="submit">html</button></li>
+                <li><button type="submit">css</button></li>
+                <li><button type="submit">javascript</button></li>
+              </ul>
+              <ul class="flex">
+                <li><button class="desktop" type="submit">github</button></li>
+                <li><button class="desktop" type="submit">ruby</button></li>
+                <li><button class="desktop" type="submit">bootstrap</button></li>
+              </ul>
+            </div>
+            <div class="stroke wf"></div>
+            <ul class="btn-link wf flex">
+              <li>
+                <button class="end-btn flex">
+                <a href="${workSection[index].link.seeLive}" class="alink flex">See live</a><i class="bx bx-log-out-circle hub"></i>
+                </button>
+              </li>
+              <li>
+                <button class="end-btn flex">
+                <a href="${workSection[index].link.sources}" class="alink flex">See source</a><i class="bx bxl-github hub"></i>
+                </button>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
-    </div>
-    <i class="bx bx-x"></i>`;
+      <i class="bx bx-x"></i>
+    <div>`;
 }
 
 const modalContainer = document.querySelector('.modal-container');

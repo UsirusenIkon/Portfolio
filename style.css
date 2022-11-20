@@ -390,7 +390,6 @@ h3 {
 }
 
 .cards-image {
-  margin: 1rem;
   justify-content: center;
 }
 
@@ -496,13 +495,12 @@ h3 {
 
 .modal {
   position: relative;
+  max-height: 90vh;
   width: 80%;
-  height: 90%;
   padding: 1em;
   background-color: var(--background-color);
   border-radius: 8px;
   line-height: 1.2em;
-  margin: 2em;
   overflow-y: scroll;
 }
 
@@ -510,8 +508,15 @@ h3 {
   animation: scale-up-ver-center 0.7s;
 }
 
+/* $-width-$ */
 .modal::-webkit-scrollbar {
   display: none;
+}
+
+.modal-content {
+  margin: 1rem 0;
+  flex-wrap: wrap;
+  gap: 1rem;
 }
 
 .paratext {
@@ -527,14 +532,13 @@ h3 {
 }
 
 .modal .cards-image {
-  margin: 1em 0;
   justify-content: flex-start;
 }
 
 .modal-img {
-  width: 80%;
+  width: 100%;
   height: auto;
-  min-height: 100%;
+  max-width: 24rem;
 }
 
 .btn-link {
@@ -620,16 +624,6 @@ h3 {
 @media screen and (min-width: 760px) {
   .modal {
     width: max-content;
-  }
-
-  .modal-img {
-    max-width: 40rem;
-    height: 20rem;
-    min-height: 100%;
-  }
-
-  .modal-info {
-    flex-direction: row;
   }
 
   .para-length {
