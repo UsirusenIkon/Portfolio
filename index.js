@@ -291,3 +291,10 @@ window.addEventListener('DOMContentLoaded', () => {
     formTxtArea.value = data.txtArea;
   }
 });
+
+// language dropdown
+const codeLanguage = document.querySelector('.code-languages');
+const dropDownBtn = document.querySelector('.l-down');
+dropDownBtn.addEventListener('click', () => {
+  codeLanguage.classList.toggle('view');
+});

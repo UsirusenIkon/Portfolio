@@ -721,6 +721,12 @@ h3 {
 
 .code-languages {
   flex-wrap: wrap;
+  border-bottom: 1px solid grey;
+}
+
+.code-languages.view {
+  height: 0;
+  overflow: hidden;
 }
 
 .code-languages li {
